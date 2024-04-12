@@ -9,12 +9,11 @@ beforeContent %} {{ govukBackLink({ text: "Back", href:
     </h1>
 
     {{ govukSummaryList({ rows: [ { key: { text: "Your Superhero Name" }, value:
-    { text: data['superhero-name'] }, actions: { items: [ { href: "#", text:
-    "Change", visuallyHiddenText: "Question 1" } ] } } , { key: { text:
-    "Question 2" }, value: { text: "Answer 2" }, actions: { items: [ { href:
-    "#", text: "Change", visuallyHiddenText: "Question 2" } ] } } , { key: {
-    text: "Question 3" }, value: { text: "Answer 3" }, actions: { items: [ {
-    href: "#", text: "Change", visuallyHiddenText: "Question 3" } ] } } ] }) }}
+    { text: data['superhero-name'] }, actions: { items: [ { href: "/superhero-name", text:
+    "Change", visuallyHiddenText: "Superhero Name" } ] } } , { key: { text:
+    "Your Superhero Power" }, value: { text: data['superhero-power'] }, actions:
+    { items: [ { href: "/superhero-power", text: "Change", visuallyHiddenText: "Superhero
+    Power" } ] } } ] }) }}
 
     <h2 class="govuk-heading-m">Now send your application</h2>
 

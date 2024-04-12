@@ -8,8 +8,9 @@
     <form class="form" action="/superhero-power" method="post">
       {% from "govuk/components/input/macro.njk" import govukInput %} {{
       govukInput({ label: { text: "What is your superhero name?", classes:
-      "govuk-label--l", isPageHeading: true }, id: "superhero-name", name:
-      "superhero-name" }) }} {{ govukButton({ text: "Continue" }) }}
+      "govuk-label--l", isPageHeading: true }, value: data['superhero-name'],
+      id: "superhero-name", name: "superhero-name" }) }} {{ govukButton({ text:
+      "Continue" }) }}
     </form>
   </div>
 </div>
